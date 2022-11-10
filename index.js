@@ -150,7 +150,7 @@ io.on('connection', function(socket) {
 
 });
 
-console.log('--- server is running ...');
+console.log('--- server is running ...'+port);
 
 function guid() {
 	function s4() {
