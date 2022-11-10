@@ -2,10 +2,10 @@ var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
+const host = '0.0.0.0';
+const port = 8651;
 
-const port = 5000;
-
-server.listen(port);
+server.listen(port, host);
 
 // global variables for the server
 var enemies = [];
