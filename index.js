@@ -3,7 +3,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 const host = '0.0.0.0';
-const port = 8651;
+const port = process.env.PORT || 3002
 
 server.listen(port, host);
 
