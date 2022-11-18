@@ -29,7 +29,7 @@ server.on('listening', () => {
 
     const address = server.address();
 
-    console.log(`server listening on ${address.address}:${address.port}`);
+    console.log(`Game server listening on:  ${address.address}:${address.port}`);
 
 });
 
