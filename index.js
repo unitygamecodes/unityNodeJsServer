@@ -2,7 +2,7 @@ const dgram = require('dgram');
 const server = dgram.createSocket('udp4');
 
 const hostnam = '0.0.0.0';
-const portnum = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 server.on('error', (err) => {
 
@@ -34,4 +34,4 @@ server.on('listening', () => {
 });
 
 
-server.bind(portnum);
+server.bind(PORT);
